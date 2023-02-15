@@ -23,11 +23,10 @@ public class ParseIntegers {
             String next = words.next();
             try {
                 int number = Integer.parseInt(next);
-                 sum+=number;
+                sum+=number;
             } catch (NumberFormatException ex1){
-                System.out.println("NumberFormat Exception: invalid input string");
-            } 
-            justWords+= next + " ";
+                justWords= justWords + " " +next;
+            }
         }
         System.out.println("Sum is " + sum);
         System.out.println("Just words:" + justWords);
